@@ -18,9 +18,9 @@ public class LoginFactoryTest {
 
     @Test
     public void testInteria() throws Exception{
-        LoginFactory github = new LoginFactory(driver, "https://poczta.interia.pl/");
-        github.login("test@interia.pl", "123");
-        assertTrue(github.loginError("error"));
+        LoginFactory interia = new LoginFactory(driver, "https://poczta.interia.pl/");
+        interia.login("test@interia.pl", "123");
+        assertTrue(interia.loginError("error"));
     }
 
     @Test
